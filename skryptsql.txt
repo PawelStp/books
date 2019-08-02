@@ -1,0 +1,25 @@
+
+CREATE TABLE Persons(
+	[Id] int IDENTITY(1,1) PRIMARY KEY,
+	[Name] nvarchar(20) NOT NULL,
+	[Surname] nvarchar(50) NOT NULL
+);
+
+CREATE TABLE Books (
+    [Id] int IDENTITY(1,1) PRIMARY KEY,
+    [Title] nvarchar(255) NOT NULL,
+    [Created] datetime NOT NULL DEFAULT GETDATE() ,
+    [AuthorId] int NOT NULL FOREIGN KEY REFERENCES Persons(Id),
+);
+
+
+
+ninject,
+ninject mvc5,
+ninject web api,
+stworz plik NinjectWebCommon i go skopiuj
+pamietaj o bundlach
+
+angular w3schools przyklady, polecam
+
+angular,
